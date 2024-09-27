@@ -6,11 +6,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Fredoka", sans-serif;
-  font-size: 62.5%;
 }
 
 .nav__links-desktop {
@@ -22,7 +22,7 @@ body {
 }
 
 .section-title {
-  font-size: 3.8em;
+  font-size: 3.8rem;
   margin-bottom: 20px;
 }
 
@@ -31,7 +31,7 @@ body {
   margin-top: 10px;
   padding: 20px 40px;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   border: none;
   background-color: #000;
   text-decoration: none;
@@ -50,10 +50,10 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 5%;
 }
 .nav__logo {
-  font-size: 4.2em;
+  font-size: 4.2rem;
   font-weight: bold;
   letter-spacing: -2px;
   text-decoration: none;
@@ -98,7 +98,7 @@ body {
 }
 .nav__link-mobile {
   padding: 10px 20px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #000;
 }
@@ -127,13 +127,13 @@ body {
   z-index: -2;
 }
 .header__title {
-  font-size: 4.8em;
+  font-size: 4.8rem;
   font-weight: 600;
 }
 .header__p {
   margin: 20px 0;
   max-width: 300px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .welcome {
@@ -144,7 +144,7 @@ body {
   display: none;
 }
 .welcome__text {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   padding: 20px 0;
   max-width: 500px;
   text-align: left;
@@ -217,13 +217,13 @@ body {
   position: absolute;
   bottom: 50px;
   left: 20px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 .featured__card--link {
   position: absolute;
   left: 20px;
   bottom: 30px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
@@ -236,7 +236,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   right: 20px;
-  font-size: 15em;
+  font-size: 15rem;
   color: rgba(255, 255, 255, 0.7);
 }
 .featured__card:hover {
@@ -264,7 +264,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 25px 20px;
-  font-size: 2.6em;
+  font-size: 2.6rem;
   font-weight: bold;
   letter-spacing: -2px;
   background-color: #000;
@@ -278,7 +278,7 @@ body {
   padding: 20px 5px;
   color: #303030;
   text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   transition: color 0.3s;
 }
 .footer__link:hover {
@@ -296,7 +296,7 @@ body {
     margin: 0 40px;
   }
   .section-title {
-    font-size: 5.2em;
+    font-size: 5.2rem;
   }
   .home {
     display: block;
@@ -321,7 +321,7 @@ body {
     transform: translate(-50%, -50%) rotate(90deg);
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     color: #9dacce;
   }
   .nav .burger-btn {
@@ -338,7 +338,7 @@ body {
     position: relative;
     margin: 0 5px;
     padding: 10px 20px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #526c8f;
   }
@@ -373,21 +373,21 @@ body {
     width: 80px;
   }
   .section-title {
-    font-size: 6.2em;
+    font-size: 6.2rem;
   }
   .header {
     padding: 100px;
   }
   .header__title {
-    font-size: 5.6em;
+    font-size: 5.6rem;
   }
   .header__p {
-    font-size: 2.2em;
+    font-size: 2.2rem;
   }
   .header__btn {
     margin-top: 50px;
     padding: 25px 50px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
   .footer {
     position: relative;
@@ -412,7 +412,7 @@ body {
     left: 100px;
     transform: translate(-50%, -50%);
     padding: 0;
-    font-size: 3.4em;
+    font-size: 3.4rem;
     font-weight: bold;
     letter-spacing: -2px;
     background-color: #000;
@@ -426,7 +426,7 @@ body {
   }
   .footer__link {
     padding: 10px 30px;
-    font-size: 2em;
+    font-size: 2rem;
   }
   .footer__link :hover {
     color: #727272;
@@ -537,7 +537,7 @@ body {
     padding: 100px 200px;
   }
   .header__title {
-    font-size: 7.6em;
+    font-size: 7.6rem;
     margin-bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

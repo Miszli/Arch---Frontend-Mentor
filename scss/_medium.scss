@@ -17,7 +17,7 @@
 		top: 0;
 		left: 0;
 		height: 200px;
-		width: 30px;
+		width: 35px;
 
 		.line {
 			position: absolute;
@@ -25,7 +25,7 @@
 			transform: translateX(-50%);
 			width: 3px;
 			height: 50%;
-			background-color: #c6d2eb;
+			background-color: rgba(198, 210, 235, 0.7);
 		}
 
 		&-p {
@@ -36,11 +36,13 @@
 			text-transform: uppercase;
 			letter-spacing: 6px;
 			font-size: 1.6rem;
-			color: #9dacce;
+			color: rgb(168, 179, 202);
 		}
 	}
 
 	.nav {
+		padding: 3%;
+		padding-left: 0;
 		.burger-btn {
 			display: none;
 		}
@@ -51,14 +53,14 @@
 
 		&__links-desktop {
 			display: block;
-			margin-left: 50px;
+			margin-left: 30px;
 		}
 
 		&__link-desktop {
 			position: relative;
 			margin: 0 5px;
 			padding: 10px 20px;
-			font-size: 1.8rem;
+			font-size: 2.2rem;
 			text-decoration: none;
 			color: #526c8f;
 
@@ -71,7 +73,7 @@
 				height: 3px;
 				width: 0;
 				background-color: #526c8f;
-				transition: width .3s;
+				transition: width 0.3s;
 			}
 
 			&:hover::before {

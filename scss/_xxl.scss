@@ -8,14 +8,17 @@
 	}
 
 	.home {
-		width: 150px;
+		width: 10%;
 	}
 
 	.header {
-		padding: 100px 200px;
 		&__title {
 			font-size: 7.6rem;
 			margin-bottom: 30px;
 		}
+	}
+
+	.footer {
+		width: 1000px;
 	}
 }

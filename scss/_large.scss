@@ -2,7 +2,6 @@
 	.welcome {
 		position: relative;
 		display: flex;
-		margin-bottom: 70px;
 
 		.box-text {
 			width: 50%;
@@ -23,8 +22,6 @@
 	}
 
 	.about-us {
-		padding: 200px;
-
 		&__box {
 			width: 400px;
 		}
@@ -40,7 +37,15 @@
 
 		&__card {
 			height: 500px;
-			margin: 5px;
+			margin: 0 1%;
+
+			&:nth-child(1) {
+				margin-left: 0;
+			}
+
+			&:nth-child(3) {
+				margin-right: 0;
+			}
 
 			&--number {
 				top: 0;

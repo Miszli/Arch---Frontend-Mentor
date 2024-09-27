@@ -17,8 +17,13 @@
 		font-size: 6.2rem;
 	}
 
+	.nav {
+		&__links-desktop {
+			margin-left: 50px;
+		}
+	}
+
 	.header {
-		padding: 100px;
 		&__title {
 			font-size: 5.6rem;
 		}
@@ -35,9 +40,7 @@
 	}
 
 	.footer {
-		position: relative;
 		flex-direction: row;
-		align-items: center;
 		margin: 0 auto;
 		width: 800px;
 		height: 200px;
@@ -53,21 +56,16 @@
 		}
 
 		&__title {
-			position: absolute;
 			top: 50%;
 			left: 100px;
 			transform: translate(-50%, -50%);
 			padding: 0;
 			font-size: 3.4rem;
-			font-weight: bold;
-			letter-spacing: -2px;
-			background-color: #000;
-			color: #fff;
 		}
 
 		&__links {
 			position: absolute;
-			top: 30%;
+			top: 25%;
 			left: 300px;
 			flex-direction: row;
 		}
@@ -75,16 +73,12 @@
 		&__link {
 			padding: 10px 30px;
 			font-size: 2rem;
-
-			:hover {
-				color: #727272;
-			}
 		}
 
 		&__btn {
 			position: absolute;
 			margin-top: 0;
-			top: 80%;
+			top: 70%;
 			right: 25%;
 			transform: translateY(-50%);
 		}

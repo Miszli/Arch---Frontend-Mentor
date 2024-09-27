@@ -1,0 +1,92 @@
+@media (width>=786px) {
+	.margin-left {
+		max-width: 1200px;
+		margin: 0 100px;
+	}
+
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 100px;
+	}
+
+	.home {
+		width: 80px;
+	}
+
+	.section-title {
+		font-size: 6.2em;
+	}
+
+	.header {
+		padding: 100px;
+		&__title {
+			font-size: 5.6em;
+		}
+
+		&__p {
+			font-size: 2.2em;
+		}
+
+		&__btn {
+			margin-top: 50px;
+			padding: 25px 50px;
+			font-size: 1.8em;
+		}
+	}
+
+	.footer {
+		position: relative;
+		flex-direction: row;
+		align-items: center;
+		margin: 0 auto;
+		width: 800px;
+		height: 200px;
+
+		&__title-box {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 200px;
+			width: 200px;
+			background-color: #000;
+			transform: translateY(-50%);
+		}
+
+		&__title {
+			position: absolute;
+			top: 50%;
+			left: 100px;
+			transform: translate(-50%, -50%);
+			padding: 0;
+			font-size: 3.4em;
+			font-weight: bold;
+			letter-spacing: -2px;
+			background-color: #000;
+			color: #fff;
+		}
+
+		&__links {
+			position: absolute;
+			top: 30%;
+			left: 300px;
+			flex-direction: row;
+		}
+
+		&__link {
+			padding: 10px 30px;
+			font-size: 2em;
+
+			:hover {
+				color: #727272;
+			}
+		}
+
+		&__btn {
+			position: absolute;
+			margin-top: 0;
+			top: 80%;
+			right: 25%;
+			transform: translateY(-50%);
+		}
+	}
+}

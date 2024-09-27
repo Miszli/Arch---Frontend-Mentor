@@ -1,0 +1,21 @@
+@media (width>=1400px) {
+	.margin-left {
+		margin: 0 auto;
+	}
+
+	.wrapper {
+		margin: 0 auto;
+	}
+
+	.home {
+		width: 150px;
+	}
+
+	.header {
+		padding: 100px 200px;
+		&__title {
+			font-size: 7.6em;
+			margin-bottom: 30px;
+		}
+	}
+}

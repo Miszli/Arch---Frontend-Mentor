@@ -1,0 +1,34 @@
+@media (width>1200px) {
+	.welcome {
+		position: relative;
+		display: flex;
+
+		.box-text {
+			width: 45%;
+			padding-right: 20px;
+			margin-top: 200px;
+			margin-left: 80px;
+		}
+
+		&__background-text {
+			position: absolute;
+			display: block;
+			font-size: 182px;
+			color: #ddd;
+			font-weight: bold;
+			letter-spacing: 20px;
+			z-index: 20;
+		}
+
+		&__img {
+			margin-top: 120px;
+			position: absolute;
+			display: block;
+			right: 0;
+		}
+	}
+
+	.footer {
+		width: 1000px;
+	}
+}

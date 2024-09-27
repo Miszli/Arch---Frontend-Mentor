@@ -1,0 +1,64 @@
+@media (width>976px) {
+	.welcome {
+		position: relative;
+		display: flex;
+		margin-bottom: 70px;
+
+		.box-text {
+			width: 50%;
+			text-align: left;
+		}
+
+		&__text {
+			max-width: 500px;
+		}
+
+		&__img {
+			position: absolute;
+			display: block;
+			right: 0;
+			width: 45%;
+			max-height: 600px;
+		}
+	}
+
+	.about-us {
+		padding: 200px;
+
+		&__box {
+			width: 400px;
+		}
+	}
+
+	.featured {
+		padding: 100px 0;
+		&__cards {
+			display: flex;
+			flex-direction: row;
+			margin-top: 50px;
+		}
+
+		&__card {
+			height: 500px;
+			margin: 5px;
+
+			&--number {
+				top: 0;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	.footer {
+		width: 800px;
+
+		&__links {
+			left: 250px;
+			top: auto;
+		}
+		&__btn {
+			top: 50%;
+			right: -100px;
+		}
+	}
+}

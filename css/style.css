@@ -5,8 +5,6 @@
 }
 
 html {
-  width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
@@ -14,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .nav__links-desktop {
@@ -344,7 +343,7 @@ body {
 }
 .contact-details .office-box {
   padding: 10%;
-  width: 400px;
+  width: 100%;
   font-size: 1.8rem;
   color: rgb(102, 102, 102);
 }
@@ -372,6 +371,7 @@ body {
   padding-bottom: 100px;
 }
 .maps iframe {
+  width: 100%;
   padding: 20px;
 }
 
@@ -380,7 +380,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 0 100px;
+  padding-bottom: 200px;
+}
+.form .error {
+  font-size: 1.4em;
+  color: #f11439;
+  visibility: hidden;
 }
 .form__title {
   font-size: 4.2rem;
@@ -391,8 +396,8 @@ body {
 }
 .form__form--input {
   display: block;
-  padding: 10px;
-  margin: 20px 0;
+  padding: 15px;
+  margin: 10px 0;
   width: 100%;
   font-size: 2.2rem;
   border: none;
@@ -403,10 +408,10 @@ body {
   border: 2px solid black;
 }
 .form__form--message {
-  min-width: 800px;
-  max-width: 800px;
-  min-height: 100px;
-  max-height: 500px;
+  min-width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  min-height: 50px;
 }
 .form__form--send {
   position: absolute;
@@ -417,6 +422,12 @@ body {
   border: none;
   font-size: 2.4rem;
   color: #fff;
+  cursor: pointer;
+}
+.form__sent {
+  font-size: 1.8rem;
+  color: #00aa17;
+  visibility: hidden;
 }
 
 @media (width >= 576px) {
@@ -493,6 +504,9 @@ body {
   }
   .about-us__box {
     width: 350px;
+  }
+  .form__form {
+    width: 500px;
   }
 }
 @media (width >= 786px) {
@@ -607,10 +621,14 @@ body {
   }
   .form {
     flex-direction: row;
+    justify-content: space-between;
   }
   .form__title {
     font-size: 5.6rem;
     margin-right: 50px;
+  }
+  .form__form {
+    width: 1000px;
   }
 }
 @media (width > 976px) {

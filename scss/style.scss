@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 }
 
@@ -294,6 +294,7 @@ body {
 .footer {
 	position: relative;
 	display: flex;
+	margin: 0 auto;
 	padding: 50px;
 	justify-content: center;
 	align-items: center;
@@ -338,7 +339,7 @@ body {
 .contact-header {
 	position: relative;
 	width: clamp(300px, 100%, 1200px);
-	padding: 100px 0;
+	margin-bottom: 50px;
 	&__img {
 		width: 100%;
 		filter: grayscale(100%);
@@ -356,7 +357,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-
+		padding: 3%;
 
 		.section-title {
 			text-align: center;
@@ -365,7 +366,46 @@ body {
 
 		&--text {
 			font-size: 1.8rem;
-			max-width: 500px
+			max-width: 500px;
+		}
+	}
+}
+
+.contact-details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 0;
+
+	.section-title {
+		font-size: 4.2rem;
+	}
+
+	.office-box {
+		padding: 10%;
+		width: 400px;
+		font-size: 1.8rem;
+		color: rgb(102, 102, 102);
+
+		&__office {
+			color: rgb(65, 65, 65);
+			margin-bottom: 15px;
+		}
+
+
+		&__link {
+			display: block;
+			margin-top: 50px;
+			text-decoration: none;
+			color: #000;
+			font-weight: bold;
+			transition: text-decoration .3s;
+
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }

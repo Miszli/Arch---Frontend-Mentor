@@ -262,6 +262,7 @@ body {
 .footer {
   position: relative;
   display: flex;
+  margin: 0 auto;
   padding: 50px;
   justify-content: center;
   align-items: center;
@@ -301,7 +302,7 @@ body {
 .contact-header {
   position: relative;
   width: clamp(300px, 100%, 1200px);
-  padding: 100px 0;
+  margin-bottom: 50px;
 }
 .contact-header__img {
   width: 100%;
@@ -318,6 +319,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 3%;
 }
 .contact-header__text-box .section-title {
   text-align: center;
@@ -326,6 +328,38 @@ body {
 .contact-header__text-box--text {
   font-size: 1.8rem;
   max-width: 500px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+.contact-details .section-title {
+  font-size: 4.2rem;
+}
+.contact-details .office-box {
+  padding: 10%;
+  width: 400px;
+  font-size: 1.8rem;
+  color: rgb(102, 102, 102);
+}
+.contact-details .office-box__office {
+  color: rgb(65, 65, 65);
+  margin-bottom: 15px;
+}
+.contact-details .office-box__link {
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: text-decoration 0.3s;
+}
+.contact-details .office-box__link:hover {
+  text-decoration: underline;
 }
 
 @media (width >= 576px) {
@@ -474,28 +508,42 @@ body {
   }
   .contact-header__background-text {
     position: absolute;
-    top: 0;
+    top: -10%;
     right: 0;
     font-size: 15rem;
     z-index: 10;
   }
   .contact-header__text-box {
     position: absolute;
-    padding: 3%;
+    padding: 5%;
     top: 30%;
     right: 0;
     width: 60%;
-    height: 60%;
+    height: 100%;
     background-color: #fff;
     align-items: flex-start;
   }
   .contact-header__text-box .section-title {
-    font-size: 4.6rem;
+    font-size: 4.2rem;
     text-align: left;
   }
   .contact-header__text-box--text {
     width: 100%;
     text-align: left;
+  }
+  .contact-details {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px 0;
+  }
+  .contact-details .section-title {
+    font-size: 4.8rem;
+    margin-right: 50px;
+  }
+  .contact-details .office-box {
+    padding: 5%;
+    width: 600px;
+    font-size: 1.8rem;
   }
 }
 @media (width > 976px) {
@@ -555,9 +603,10 @@ body {
   }
   .contact-header__background-text {
     font-size: 18rem;
-    top: 12%;
+    top: -5%;
   }
   .contact-header__text-box {
+    top: 10%;
     padding: 3% 5%;
   }
   .contact-header__text-box .section-title {
@@ -592,6 +641,15 @@ body {
   }
   .footer {
     width: 900px;
+  }
+  .contact-details .section-title {
+    font-size: 5.6rem;
+  }
+  .contact-details .office-box {
+    width: 700px;
+  }
+  .contact-details .office-box span {
+    margin-left: 20px;
   }
 }
 @media (width >= 1400px) {

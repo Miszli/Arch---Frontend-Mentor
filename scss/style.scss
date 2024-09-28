@@ -5,6 +5,8 @@
 }
 
 html {
+	width: 100vw;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
@@ -393,19 +395,77 @@ body {
 			margin-bottom: 15px;
 		}
 
-
 		&__link {
 			display: block;
 			margin-top: 50px;
 			text-decoration: none;
 			color: #000;
 			font-weight: bold;
-			transition: text-decoration .3s;
-
+			transition: text-decoration 0.3s;
 
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+	}
+}
+
+.maps {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 100px;
+	iframe {
+		padding: 20px;
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 0 100px;
+
+	&__title {
+		font-size: 4.2rem;
+	}
+
+	&__form {
+		position: relative;
+		padding: 0 20px;
+
+		&--input {
+			display: block;
+			padding: 10px;
+			margin: 20px 0;
+			width: 100%;
+			font-size: 2.2rem;
+			border: none;
+			border-bottom: 1px solid black;
+
+			&:focus {
+				outline: none;
+				border: 2px solid black;
+			}
+		}
+		&--message {
+			min-width: 800px;
+			max-width: 800px;
+			min-height: 100px;
+			max-height: 500px;
+		}
+
+		&--send {
+			position: absolute;
+			bottom: -53px;
+			right: 20px;
+			padding: 20px 23px;
+			background-color: black;
+			border: none;
+			font-size: 2.4rem;
+			color: #fff;
 		}
 	}
 }

@@ -130,4 +130,15 @@
 			font-size: 1.8rem;
 		}
 	}
+	.maps {
+		flex-direction: row;
+	}
+
+	.form {
+		flex-direction: row;
+		&__title {
+			font-size: 5.6rem;
+			margin-right: 50px;
+		}
+	}
 }

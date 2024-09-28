@@ -5,6 +5,8 @@
 }
 
 html {
+  width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
@@ -362,6 +364,61 @@ body {
   text-decoration: underline;
 }
 
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.maps iframe {
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 100px;
+}
+.form__title {
+  font-size: 4.2rem;
+}
+.form__form {
+  position: relative;
+  padding: 0 20px;
+}
+.form__form--input {
+  display: block;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  font-size: 2.2rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.form__form--input:focus {
+  outline: none;
+  border: 2px solid black;
+}
+.form__form--message {
+  min-width: 800px;
+  max-width: 800px;
+  min-height: 100px;
+  max-height: 500px;
+}
+.form__form--send {
+  position: absolute;
+  bottom: -53px;
+  right: 20px;
+  padding: 20px 23px;
+  background-color: black;
+  border: none;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
 @media (width >= 576px) {
   .margin-left {
     margin-left: 40px;
@@ -544,6 +601,16 @@ body {
     padding: 5%;
     width: 600px;
     font-size: 1.8rem;
+  }
+  .maps {
+    flex-direction: row;
+  }
+  .form {
+    flex-direction: row;
+  }
+  .form__title {
+    font-size: 5.6rem;
+    margin-right: 50px;
   }
 }
 @media (width > 976px) {

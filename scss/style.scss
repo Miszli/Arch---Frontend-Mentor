@@ -215,6 +215,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 30px;
 
 		.section-title {
 			margin-bottom: 0;
@@ -330,6 +331,41 @@ body {
 
 	.cla-btn:hover {
 		background-color: rgba($color: #000, $alpha: 0.7);
+	}
+}
+
+.contact-header {
+	position: relative;
+	width: clamp(300px, 100%, 1200px);
+	padding: 100px 0;
+	&__img {
+		width: 100%;
+		filter: grayscale(100%);
+		transform: rotateY(180deg);
+	}
+
+	&__background-text {
+		text-align: center;
+		font-size: 8rem;
+		color: rgba(184, 184, 184, 0.9);
+	}
+
+	&__text-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+
+		.section-title {
+			text-align: center;
+			font-size: 4.2rem;
+		}
+
+		&--text {
+			font-size: 1.8rem;
+			max-width: 500px
+		}
 	}
 }
 

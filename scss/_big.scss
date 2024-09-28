@@ -83,4 +83,34 @@
 			transform: translateY(-50%);
 		}
 	}
+
+	.contact-header {
+		&__background-text {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 15rem;
+			z-index: 10;
+		}
+
+		&__text-box {
+			position: absolute;
+			padding: 3%;
+			top: 30%;
+			right: 0;
+			width: 60%;
+			height: 60%;
+			background-color: #fff;
+			align-items: flex-start;
+			.section-title {
+				font-size: 4.6rem;
+				text-align: left;
+			}
+
+			&--text {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	}
 }

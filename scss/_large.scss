@@ -66,4 +66,21 @@
 			right: -100px;
 		}
 	}
+
+	.contact-header {
+		&__background-text {
+			font-size: 18rem;
+			top: 12%;
+
+		}
+
+		&__text-box {
+			padding: 3% 5%;
+
+			.section-title {
+				font-size: 5.6rem;
+
+			}
+		}
+	}
 }
